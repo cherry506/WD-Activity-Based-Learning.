@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #fffaf2;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #432719;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #f5c16c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #f5c16c;
+}
+
+.hero {
+    background: linear-gradient(120deg, #5b3421, #a66b3f);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f5c16c;
+    color: #432719;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 45px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #713d22;
+    margin-bottom: 25px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin: 10px auto;
+    width: 240px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.card h3 {
+    color: #9b572d;
+    margin-bottom: 10px;
+}
+
+.card b {
+    color: #6b391e;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #713d22;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #a66b3f;
+}
+
+#contact {
+    background-color: #f1e4d5;
+}
+
+footer {
+    background-color: #432719;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
